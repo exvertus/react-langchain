@@ -76,7 +76,7 @@ if __name__ == '__main__':
     while not isinstance(agent_step, AgentFinish):
         agent_step: Union[AgentAction, AgentFinish] = agent.invoke(
             {
-                "input": "Write a haiku about dogs and then count the length by characters.",
+                "input": "Write a haiku about cats and then count the length by characters.",
                 "agent_scratchpad": intermediate_steps,
             })
         print(agent_step)
